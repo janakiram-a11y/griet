@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(ConvertTo-Csv -NoTypeInformation)",
+      "Bash(Out-String)",
+      "Bash(Get-ChildItem -Path \"D:\\\\Projects\\\\Duplicate project\\\\grcp-site-v1\" -Recurse -File)",
+      "Bash(Sort-Object FullName)",
+      "Bash(awk '{print $9, \"\\(\" $5 \"\\)\"}')",
+      "Bash(dir \"D:\\\\Projects\\\\Duplicate project\\\\glec-site-v1\\\\src\" /b /s)",
+      "Bash(findstr /v \"node_modules\")",
+      "Bash(findstr \".jsx .js .css\")"
+    ]
+  }
+}

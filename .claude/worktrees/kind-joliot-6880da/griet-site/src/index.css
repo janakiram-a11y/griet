@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Sidebar: hide scrollbar at rest, reveal gold thumb on hover */
+  .sidebar-scroll {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.25s ease;
+  }
+  .sidebar-scroll:hover {
+    scrollbar-color: #B89047 transparent;
+  }
+  .sidebar-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .sidebar-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 2px;
+  }
+  .sidebar-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #B89047;
+  }
+}

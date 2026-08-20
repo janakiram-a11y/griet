@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:www.glwec.in)",
+      "Bash(npm run *)",
+      "Bash(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\theme.js\" -Destination \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\theme.js\" -Force)",
+      "Bash(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\index.css\" -Destination \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\index.css\" -Force)",
+      "Bash(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\App.jsx\" -Destination \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\App.jsx\" -Force)",
+      "Bash(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\components\\\\SidebarPageLayout.jsx\" -Destination \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\components\\\\SidebarPageLayout.jsx\" -Force)",
+      "Bash(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\components\\\\NavStrip.jsx\" -Destination \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\components\\\\NavStrip.jsx\" -Force)",
+      "PowerShell(Copy-Item \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\\\\components\\\\AdminSidebarLayout.jsx\" \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\\\\components\\\\AdminSidebarLayout.jsx\" -Force)",
+      "PowerShell($src = \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\\\\src\"; $dst = \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-mestorf-110e4c\\\\glec-site\\\\src\"; Copy-Item \"$src\\\\App.jsx\" \"$dst\\\\App.jsx\" -Force; Copy-Item \"$src\\\\theme.js\" \"$dst\\\\theme.js\" -Force; Copy-Item \"$src\\\\pages\\\\ContactPage.jsx\" \"$dst\\\\pages\\\\ContactPage.jsx\" -Force; Write-Host \"Synced: App.jsx, theme.js, pages\\\\ContactPage.jsx\")"
+    ]
+  }
+}

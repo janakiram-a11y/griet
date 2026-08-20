@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(ConvertTo-Csv -NoTypeInformation)",
+      "Bash(Select-Object -Skip 1)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Projects\\\\GRES Colleges\\\\glec-site\" -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false } | Select-Object FullName)",
+      "Read(//d/Projects/GRES Colleges/griet-site/**)",
+      "Read(//d/Projects/GRES Colleges/griet-site/src/**)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:www.griet.ac.in)",
+      "WebFetch(domain:www.ece.griet.ac.in)",
+      "WebFetch(domain:www.cse.griet.ac.in)",
+      "Bash(dir /b /s public)",
+      "Bash(cd /d \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\")",
+      "Bash(dir)",
+      "Bash(dir /b /s \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\.claude\\\\worktrees\\\\kind-joliot-6880da\\\\public\")"
+    ]
+  }
+}

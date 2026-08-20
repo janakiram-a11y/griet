@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"D:\\\\Projects\\\\GRES Colleges\\\\griet-site\\\\griet-site\")",
+      "Bash(cd \"/d/Projects/GRES Colleges/griet-site/.claude/worktrees/suspicious-mcnulty-78513d/griet-site\" && find . -maxdepth 2 -type f \\\\\\( -name \"tailwind.config.*\" -o -name \"*globals*\" -o -name \"*.css\" \\\\\\) | head -20)"
+    ]
+  }
+}

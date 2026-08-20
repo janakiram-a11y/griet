@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/janak/Downloads/Code of conduct for Students-GRIET.pdf\" \"D:/Projects/GRES Colleges/griet-site/.claude/worktrees/adoring-tesla-be9c2b/griet-site/public/code-of-conduct-students.pdf\")",
+      "Bash(cp \"C:/Users/janak/Downloads/College Diary 2024-25.pdf\" \"D:/Projects/GRES Colleges/griet-site/.claude/worktrees/adoring-tesla-be9c2b/griet-site/public/college-diary-2024-25.pdf\")",
+      "Bash(cp \"C:/Users/janak/Downloads/Code of conduct for Students-GRIET.pdf\" \"D:/Projects/GRES Colleges/griet-site/public/code-of-conduct-students.pdf\")",
+      "Bash(cp \"C:/Users/janak/Downloads/College Diary 2024-25.pdf\" \"D:/Projects/GRES Colleges/griet-site/public/college-diary-2024-25.pdf\")"
+    ]
+  }
+}

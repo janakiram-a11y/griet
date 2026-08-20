@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="60" viewBox="0 0 160 60">
+  <rect width="160" height="60" rx="4" fill="#2e7d32"/>
+  <text x="80" y="22" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Education</text>
+  <text x="80" y="36" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">World</text>
+  <text x="80" y="52" font-family="Arial,sans-serif" font-size="7.5" fill="#c8e6c9" text-anchor="middle">EW India Rankings</text>
+</svg>

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #5B1027;
+  --color-primary-dark: #3d0919;
+  --color-primary-darkest: #2d0714;
+  --color-highlight: #C32033;
+  --color-highlight-dark: #a01c28;
+  --color-dark: #222222;
+  --color-neutral: #BFBFBF;
+  --color-soft: #F3DAB2;
+}
+
+@layer utilities {
+  /* Consistent section/page padding — 120px horizontal, 80px vertical on desktop */
+  .page-pad {
+    @apply px-4 py-10 md:px-[60px] md:py-[60px] lg:px-[120px] lg:py-[80px];
+  }
+
+  /* Sidebar: hide scrollbar at rest, reveal gold thumb on hover */
+  .sidebar-scroll {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.25s ease;
+  }
+  .sidebar-scroll:hover {
+    scrollbar-color: #C32033 transparent;
+  }
+  .sidebar-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .sidebar-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 2px;
+  }
+  .sidebar-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #C32033;
+  }
+}
