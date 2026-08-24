@@ -18,7 +18,7 @@ const hods = [
   { sno: 3, name: 'Dr. Y Jeevan Nagendra Kumar',  dept: 'Information Technology & CSIT',                               shortDept: 'IT/CSIT',  photo: 'https://www.griet.ac.in/2023/nagendra-1.jpg' },
   { sno: 4, name: 'Dr. G. Karuna',                dept: 'CSE – Artificial Intelligence and Machine Learning',          shortDept: 'CSE-AIML', photo: 'https://www.griet.ac.in/images/karuna.jpg' },
   { sno: 5, name: 'Dr. S Govinda Rao',            dept: 'CSE – Data Science & Computer Science and Business Systems',  shortDept: 'CSE-DS/CSBS', photo: 'https://www.griet.ac.in/images/govindrao.jpg' },
-  { sno: 6, name: 'Dr. V Vijaya Rama Raju',       dept: 'Electrical and Electronics Engineering',                      shortDept: 'EEE',      photo: 'https://www.griet.ac.in/2023/vvrr.png' },
+  { sno: 6, name: 'Dr. P Srividya Devi',          dept: 'Electrical and Electronics Engineering',                      shortDept: 'EEE',      photo: null },
   { sno: 7, name: 'Dr. Anitha Lakshmi',           dept: 'Mechanical Engineering',                                      shortDept: 'ME',       photo: 'https://www.griet.ac.in/2023/anitha.jpg' },
   { sno: 8, name: 'Dr. T Srinivas',               dept: 'Civil Engineering',                                           shortDept: 'CE',       photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0032.jpg' },
   { sno: 9, name: 'Dr. M Sridhar',                dept: 'Humanities and Sciences',                                     shortDept: 'H&S',      photo: 'https://www.griet.ac.in/2023/sridhar.jpg' },
@@ -50,17 +50,19 @@ export default function AdminHODsPage() {
                     className="w-24 h-24 rounded-full flex-shrink-0"
                     style={{ background: `linear-gradient(135deg, ${college.primaryColor}22 0%, ${college.accentColor}22 100%)`, padding: '3px' }}
                   >
-                    <img
-                      src={photo}
-                      alt={name}
-                      className="w-full h-full rounded-full object-cover object-top"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextSibling.style.display = 'flex';
-                      }}
-                    />
+                    {photo ? (
+                      <img
+                        src={photo}
+                        alt={name}
+                        className="w-full h-full rounded-full object-cover object-top"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                    ) : null}
                     <div
-                      className="w-full h-full rounded-full items-center justify-center text-white font-display font-bold text-xl hidden"
+                      className={`w-full h-full rounded-full items-center justify-center text-white font-display font-bold text-xl ${photo ? 'hidden' : 'flex'}`}
                       style={{ backgroundColor: college.primaryColor }}
                     >
                       {name.charAt(name.lastIndexOf(' ') + 1)}

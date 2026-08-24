@@ -103,8 +103,6 @@ const SPECIAL_DAYS = [
 
 const PORTALS = [
   { label: 'Student Portal', href: 'https://greit-login-portal.vercel.app/', external: true },
-  { label: 'Exam Notifications', href: '/examinations/exam-notifications' },
-  { label: 'Results', href: '/examinations/results' },
   { label: 'OPAC – Library Catalogue', href: 'https://griet.bestbookbuddies.com', external: true },
   { label: 'Alumni Portal', href: 'https://www.alumni.griet.ac.in/', external: true },
 ];

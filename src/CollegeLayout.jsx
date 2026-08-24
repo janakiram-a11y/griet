@@ -7,7 +7,12 @@ export default function CollegeLayout({ college, children }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    // Hysteresis band (40–80px) instead of a single threshold: shrinking the
+    // header changes page layout/scrollY, which can flip a single threshold
+    // back and forth on its own and make the header shake in a feedback loop.
+    const onScroll = () => {
+      setScrolled((prev) => (prev ? window.scrollY > 40 : window.scrollY > 80));
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);

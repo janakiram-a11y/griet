@@ -13,12 +13,12 @@ function SectionHeading({ children }) {
 }
 
 const composition = [
-  { role: 'Chairperson', member: 'Chairman, GRES' },
-  { role: 'Member', member: 'Director, GRIET' },
-  { role: 'Member', member: 'Principal, GRIET' },
-  { role: 'Member', member: 'One member from the Governing Body' },
-  { role: 'Member', member: 'Finance Officer / Accounts Officer' },
-  { role: 'Member Secretary', member: 'Dean – Academics / Nominated Member' },
+  { role: 'Chairperson', member: 'Chairman, GRES', name: null, photo: null },
+  { role: 'Member', member: 'Director, GRIET', name: 'Dr. Jandhyala N Murthy', photo: 'https://www.griet.ac.in/images/gbpics/Dr.%20Jandhyala%20N%20Murthy.jpg' },
+  { role: 'Member', member: 'Principal, GRIET', name: 'Dr. J Praveen', photo: 'https://www.griet.ac.in/images/gbpics/Dr%20J%20Praveen.jpg' },
+  { role: 'Member', member: 'One member from the Governing Body', name: null, photo: null },
+  { role: 'Member', member: 'Finance Officer / Accounts Officer', name: null, photo: null },
+  { role: 'Member Secretary', member: 'Dean – Academics / Nominated Member', name: 'Dr. K Prasanna Lakshmi', photo: 'https://www.griet.ac.in/2022/iqac%20committee/prasanna%20lakshmi.jpg' },
 ];
 
 const responsibilities = [
@@ -55,14 +55,29 @@ export default function AdminFinanceCommitteePage() {
               <thead>
                 <tr style={{ backgroundColor: college.primaryColor }}>
                   <th className="text-left px-4 py-2.5 text-white font-hind font-semibold text-[0.875rem] w-36">Role</th>
+                  <th className="px-4 py-2.5 text-white font-hind font-semibold text-[0.875rem] min-w-[60px] w-16">Photo</th>
                   <th className="text-left px-4 py-2.5 text-white font-hind font-semibold text-[0.875rem]">Member</th>
                 </tr>
               </thead>
               <tbody>
-                {composition.map(({ role, member }, i) => (
+                {composition.map(({ role, member, name, photo }, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="px-4 py-3 border-b border-gray-100 font-semibold" style={{ color: college.accentColor }}>{role}</td>
-                    <td className="px-4 py-3 border-b border-gray-100 text-gray-700">{member}</td>
+                    <td className="px-4 py-3 border-b border-gray-100 min-w-[60px] w-16">
+                      {photo ? (
+                        <img
+                          src={photo}
+                          alt={name}
+                          className="w-10 h-10 rounded-full object-cover border"
+                          style={{ borderColor: college.primaryColor }}
+                        />
+                      ) : null}
+                    </td>
+                    <td className="px-4 py-3 border-b border-gray-100 text-gray-700">
+                      {name && <span className="font-semibold text-gray-800">{name}</span>}
+                      {name && ' — '}
+                      {member}
+                    </td>
                   </tr>
                 ))}
               </tbody>

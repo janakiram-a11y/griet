@@ -49,8 +49,6 @@ const ROUTE_MAP = {
   'Digital Wellbeing Council': '/academics/digital-wellbeing-council',
   // Examinations
   'Gold Medals': '/examinations/gold-medals',
-  'Exam Notifications': 'http://www.exambranch.griet.ac.in/',
-  'Results': 'https://gradesresults.griet.in/',
   'Exam Branch Downloads': '/examinations/exam-branch-downloads',
   'Transcripts & Certificates': '/examinations/transcripts-certificates',
   // Research
@@ -346,8 +344,6 @@ const PAGE_TITLES = {
   '/academics/digital-wellbeing-council': 'Digital Wellbeing Council',
   '/examinations': 'Examinations',
   '/examinations/gold-medals': 'Gold Medals',
-  '/examinations/exam-notifications': 'Exam Notifications',
-  '/examinations/results': 'Results',
   '/examinations/exam-branch-downloads': 'Exam Branch Downloads',
   '/examinations/transcripts-certificates': 'Transcripts & Certificates',
   '/rankings': 'Rankings',

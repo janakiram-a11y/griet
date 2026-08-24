@@ -167,28 +167,6 @@ export default function ExamBranchDownloadsPage() {
         </section>
       ))}
 
-      {/* Portal link */}
-      <div className="mt-4 p-4 rounded-xl border border-gray-200 bg-white flex flex-col sm:flex-row sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="font-hind font-bold text-[0.9375rem] mb-0.5" style={{ color: college.primaryColor }}>Exam Branch Portal</p>
-          <p className="font-dm-sans text-[0.875rem] text-gray-600">For exam notifications, hall tickets and live announcements, visit the portal.</p>
-        </div>
-        <a
-          href="http://www.exambranch.griet.ac.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-hind font-bold text-[0.875rem] text-white flex-shrink-0 transition-opacity hover:opacity-85"
-          style={{ backgroundColor: college.accentColor }}
-        >
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-            <polyline points="15 3 21 3 21 9" />
-            <line x1="10" y1="14" x2="21" y2="3" />
-          </svg>
-          Exam Branch Portal
-        </a>
-      </div>
-
     </AcademicsLayout>
   );
 }

@@ -45,7 +45,7 @@ const college = {
     {
       name: 'Examinations',
       href: '/examinations',
-      dropdown: ['Gold Medals', 'Exam Notifications', 'Results', 'Exam Branch Downloads', 'Transcripts & Certificates'],
+      dropdown: ['Gold Medals', 'Exam Branch Downloads', 'Transcripts & Certificates'],
     },
     {
       name: 'Departments',
@@ -77,8 +77,6 @@ const college = {
     { label: 'Student Portal', href: 'https://greit-login-portal.vercel.app/' },
     { label: 'Library & e-Resources', href: '/academics/library' },
     { label: 'OPAC (Library Catalogue)', href: 'https://griet.bestbookbuddies.com' },
-    { label: 'Exam Notifications', href: '/examinations/exam-notifications' },
-    { label: 'Results', href: '/examinations/results' },
     { label: 'Anti-Ragging Cell', href: '/anti-ragging' },
     { label: 'IQAC', href: '/iqac' },
     { label: 'FAQs', href: '/faq' },
@@ -93,12 +91,6 @@ const college = {
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/griet-engineering-college-19632a273/' },
     { label: 'YouTube', href: 'https://www.youtube.com/channel/UCjSaY5jWUAqMjJY6-u661Ew' },
   ],
-
-  heroHeading: 'Empowering Innovation, Excellence & Future Leaders',
-  heroSubtext: 'For over two decades, Gokaraju Rangaraju Institute of Engineering & Technology has been shaping bright minds into industry-ready professionals, innovators, and responsible leaders. With world-class academics, vibrant campus life, and strong placements, GRIET prepares students for a global future.',
-  heroCTALabel: 'Admissions Open 2025',
-  heroCTAHref: 'https://greit-website-brand.vercel.app/',
-  heroBgImage: '/imgi_5_aboutusbanner.jpg',
 
   statsBarItems: [
     { number: 'NAAC A++', label: 'Accredited' },
@@ -275,6 +267,7 @@ const college = {
 
   sponsoringSociety: {
     heading: 'The Sponsoring Society:',
+    logo: '/gres-logo.png',
     text: 'Dr. Gokaraju Rangaraju garu started Gokaraju Rangaraju Educational Society (GRES) in fond memory of his father late Shri Gokaraju Rangaraju garu with a motto to "Promote modern and scientific education and to help develop the character of the younger generation of all castes, communities and religions".',
   },
 

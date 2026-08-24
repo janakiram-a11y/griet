@@ -39,7 +39,7 @@ const categories = [
   {
     label: 'Heads of Departments',
     members: [
-      { sno: 9, name: 'Dr. V Vijaya Rama Raju', designation: 'HoD, Electrical and Electronics Engineering' },
+      { sno: 9, name: 'Dr. P Srividya Devi', designation: 'HoD, Electrical and Electronics Engineering' },
       { sno: 10, name: 'Dr. Anitha Lakshmi', designation: 'HoD, Mechanical Engineering' },
       { sno: 11, name: 'Dr. K Jamal', designation: 'HoD, Electronics and Communication Engineering' },
       { sno: 12, name: 'Dr. G. Karuna', designation: 'HoD, CSE (AI & ML)' },
@@ -68,7 +68,7 @@ export default function AdminAcademicCouncilPage() {
       <div className="space-y-8">
 
         <div>
-          <SectionHeading>Academic Council 2025–26</SectionHeading>
+          <SectionHeading>Academic Council</SectionHeading>
           <p className="font-dm-sans text-base leading-relaxed text-gray-600 mb-8 max-w-2xl">
             The Academic Council supervises the academic work of the institution and provides guidance on
             curricula, syllabi, evaluation methods, and new programme proposals. It is the apex academic body

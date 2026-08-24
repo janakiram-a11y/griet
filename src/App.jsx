@@ -51,8 +51,6 @@ import FinishingSchoolPage from './pages/FinishingSchoolPage';
 import DigitalWellbeingCouncilPage from './pages/DigitalWellbeingCouncilPage';
 import ExaminationsPage from './pages/ExaminationsPage';
 import GoldMedalsPage from './pages/GoldMedalsPage';
-import ExamNotificationsPage from './pages/ExamNotificationsPage';
-import ResultsPage from './pages/ResultsPage';
 import ExamBranchDownloadsPage from './pages/ExamBranchDownloadsPage';
 import TranscriptsCertificatesPage from './pages/TranscriptsCertificatesPage';
 import IQACPage from './pages/IQACPage';
@@ -172,8 +170,6 @@ export default function App() {
         <Route path="/academics/digital-wellbeing-council" element={<DigitalWellbeingCouncilPage />} />
         <Route path="/examinations" element={<ExaminationsPage />} />
         <Route path="/examinations/gold-medals" element={<GoldMedalsPage />} />
-        <Route path="/examinations/exam-notifications" element={<ExamNotificationsPage />} />
-        <Route path="/examinations/results" element={<ResultsPage />} />
         <Route path="/examinations/exam-branch-downloads" element={<ExamBranchDownloadsPage />} />
         <Route path="/examinations/transcripts-certificates" element={<TranscriptsCertificatesPage />} />
         <Route path="/iqac" element={<IQACPage />} />

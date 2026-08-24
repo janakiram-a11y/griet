@@ -65,11 +65,10 @@ export default function AdminDirectorPage() {
             </div>
 
             <div className="mt-6 border-t border-gray-100 pt-6 space-y-0">
-              <InfoRow label="Current Role" value="Director, Gokaraju Rangaraju Institute of Engineering & Technology" />
+              <InfoRow label="Current Role" value="Director since January 31, 2018" />
               <InfoRow label="Specialisation" value="Thermal Engineering, Gas Turbine Combustion Chambers, Simulation" />
               <InfoRow label="Education" value="B.Tech – Mechanical Engineering, IIT Madras; Ph.D. – Thermal Power Engineering, Cranfield Institute of Technology, UK" />
               <InfoRow label="Military Career" value="Wing Commander, Indian Air Force (Maintenance Branch) – 25+ years of distinguished service" />
-              <InfoRow label="Director Since" value="January 31, 2018" />
             </div>
           </div>
         </div>

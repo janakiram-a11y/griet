@@ -169,15 +169,24 @@ export default function AboutPage() {
         {/* Sponsoring Society */}
         <section>
           <SectionHeading>{sponsoringSociety.heading}</SectionHeading>
-          <p
-            className="mt-4 font-body font-normal text-[1.125rem] leading-[1.7] text-gray-800"
-            dangerouslySetInnerHTML={{
-              __html: sponsoringSociety.text.replace(
-                /Gokaraju Rangaraju Educational Society \(GRES\)/,
-                '<strong>Gokaraju Rangaraju Educational Society (GRES)</strong>'
-              ),
-            }}
-          />
+          <div className="mt-4 flex flex-col sm:flex-row gap-6 items-start">
+            {sponsoringSociety.logo && (
+              <img
+                src={sponsoringSociety.logo}
+                alt="Gokaraju Rangaraju Educational Society (GRES) logo"
+                className="w-32 h-32 sm:w-36 sm:h-36 object-contain flex-shrink-0"
+              />
+            )}
+            <p
+              className="font-body font-normal text-[1.125rem] leading-[1.7] text-gray-800"
+              dangerouslySetInnerHTML={{
+                __html: sponsoringSociety.text.replace(
+                  /Gokaraju Rangaraju Educational Society \(GRES\)/,
+                  '<strong>Gokaraju Rangaraju Educational Society (GRES)</strong>'
+                ),
+              }}
+            />
+          </div>
         </section>
 
         {/* About GRIET */}

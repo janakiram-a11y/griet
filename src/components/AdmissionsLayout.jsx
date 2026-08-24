@@ -4,31 +4,39 @@ import college from '../theme';
 export function AdmissionsBanner({ title }) {
   return (
     <div
-      className="w-full flex items-center justify-center py-10 sm:py-12 md:py-14 relative overflow-hidden"
-      style={{ background: `linear-gradient(135deg, ${college.primaryColor} 0%, #3a0b1a 100%)` }}
+      className="relative w-full flex items-center justify-center py-10 sm:py-12 md:py-14 overflow-hidden"
+      style={{
+        background: 'linear-gradient(135deg, #FAF4EE 0%, #F3E8D4 100%)',
+        borderBottom: '1px solid rgba(91,16,39,0.10)',
+      }}
     >
-      {/* Decorative elements — scale with viewport */}
-      <span
-        className="pointer-events-none absolute -left-8 -top-8 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 rounded-full opacity-10"
-        style={{ backgroundColor: college.accentColor }}
+      {/* Subtle diagonal texture */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'repeating-linear-gradient(45deg, #5B1027 0, #5B1027 1px, transparent 0, transparent 50%)',
+          backgroundSize: '20px 20px',
+          opacity: 0.025,
+        }}
       />
-      <span
-        className="pointer-events-none absolute -right-8 -bottom-8 w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full opacity-10"
-        style={{ backgroundColor: college.accentColor }}
-      />
-
-      <div className="text-center px-4 relative z-10">
-        <div className="flex items-center justify-center gap-3 mb-2">
-          <span className="block h-px w-8 sm:w-10 opacity-40" style={{ backgroundColor: college.accentColor }} />
-          <span className="font-dm-sans text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase opacity-60 text-white">
+      <div className="relative text-center px-4">
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <span className="block h-px w-6 sm:w-8 md:w-10" style={{ backgroundColor: 'rgba(91,16,39,0.25)' }} />
+          <span
+            className="font-dm-sans text-[11px] font-semibold tracking-[0.2em] uppercase"
+            style={{ color: 'rgba(91,16,39,0.50)' }}
+          >
             GRIET
           </span>
-          <span className="block h-px w-8 sm:w-10 opacity-40" style={{ backgroundColor: college.accentColor }} />
+          <span className="block h-px w-6 sm:w-8 md:w-10" style={{ backgroundColor: 'rgba(91,16,39,0.25)' }} />
         </div>
-        <h1 className="text-white font-display font-bold text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] tracking-wide sm:tracking-wider uppercase">
+        <h1
+          className="font-display font-bold text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] tracking-wide sm:tracking-wider uppercase"
+          style={{ color: college.primaryColor }}
+        >
           {title}
         </h1>
-        <div className="mx-auto mt-3 h-0.5 w-14 sm:w-16 rounded-full" style={{ backgroundColor: college.accentColor }} />
+        <div className="mx-auto mt-3 h-0.5 w-16 rounded-full" style={{ backgroundColor: college.accentColor }} />
       </div>
     </div>
   );

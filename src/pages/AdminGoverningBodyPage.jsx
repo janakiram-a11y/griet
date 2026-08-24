@@ -118,7 +118,7 @@ export default function AdminGoverningBodyPage() {
       <div className="space-y-10">
 
         <div>
-          <SectionHeading>Governing Body 2024–25</SectionHeading>
+          <SectionHeading>Governing Body</SectionHeading>
           <p className="font-dm-sans text-base leading-relaxed text-gray-600 mb-8 max-w-2xl">
             The Governing Body is the apex body of the institution, responsible for overall academic, financial,
             and administrative governance of Gokaraju Rangaraju Institute of Engineering &amp; Technology.
