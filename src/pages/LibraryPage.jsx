@@ -190,6 +190,12 @@ export default function LibraryPage() {
           {/* Description */}
           <div className="flex-1 min-w-0">
             <SectionLabel>About the Library</SectionLabel>
+            <img
+              src="/images/students/library-group-study.jpg"
+              alt="Students studying together at the GRIET library"
+              className="w-full h-auto rounded-xl mb-4 object-cover max-h-[320px]"
+              loading="lazy"
+            />
             <p className="font-dm-sans text-[13.5px] leading-relaxed text-gray-700">
               GRIET Library and Information Centre supports teaching, learning and research activities.
               It consists of a central library and department libraries. The central library stores

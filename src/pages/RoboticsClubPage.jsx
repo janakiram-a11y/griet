@@ -78,6 +78,12 @@ export default function RoboticsClubPage() {
       <section className="mb-8">
         <SectionLabel>About the Club</SectionLabel>
         <div className="p-5 rounded-xl bg-gray-50 border border-gray-200">
+          <img
+            src="/images/students/robotics-club-build.jpg"
+            alt="GRIET Robotics Club members assembling a robot"
+            className="w-full h-auto rounded-xl mb-4 object-cover max-h-[360px]"
+            loading="lazy"
+          />
           <p className="font-dm-sans text-[0.9375rem] text-gray-700 leading-relaxed mb-3">
             The <strong>GRIET Robotics Club</strong> is one of the most active technical clubs on campus. Students
             design, build, and program robots for national-level competitions, gaining invaluable hands-on engineering

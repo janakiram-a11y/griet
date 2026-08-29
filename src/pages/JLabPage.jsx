@@ -77,6 +77,12 @@ export default function JLabPage() {
       <section className="mb-10">
         <SectionLabel>About J-Lab</SectionLabel>
         <div className="p-5 rounded-xl bg-gray-50 border border-gray-200">
+          <img
+            src="/images/students/jlab-3d-printing.jpg"
+            alt="Students working with 3D printers in the GRIET innovation lab"
+            className="w-full h-auto rounded-xl mb-4 object-cover max-h-[360px]"
+            loading="lazy"
+          />
           <p className="text-gray-700 leading-relaxed text-base">
             J-Lab is GRIET's dedicated undergraduate innovation lab for first and second-year students.
             It provides hands-on prototyping, peer collaboration, and guided projects — giving junior
