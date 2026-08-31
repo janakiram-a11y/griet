@@ -1,19 +1,33 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function GalleryCard({ title, desc, img, fallbackImg, link, gridClass }) {
+function GalleryCard({ title, desc, img, fallbackImg, placeholderIcon, link, gridClass }) {
+  const [src, setSrc] = useState(img);
+  const [exhausted, setExhausted] = useState(false);
+
+  const handleError = () => {
+    if (fallbackImg && src !== fallbackImg) {
+      setSrc(fallbackImg);
+    } else {
+      setExhausted(true);
+    }
+  };
+
   const card = (
     <div className="relative w-full h-full rounded-3xl overflow-hidden cursor-pointer group">
-      <img
-        src={img}
-        alt={title}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        loading="lazy"
-        onError={e => {
-          if (fallbackImg && e.currentTarget.src !== window.location.origin + fallbackImg) {
-            e.currentTarget.src = fallbackImg;
-          }
-        }}
-      />
+      {exhausted ? (
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#5B1027]/12 to-[#5B1027]/4">
+          <span className="text-5xl opacity-40 grayscale" aria-hidden="true">{placeholderIcon || '🖼️'}</span>
+        </div>
+      ) : (
+        <img
+          src={src}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          onError={handleError}
+        />
+      )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-opacity" />
       <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 lg:p-6">
         <h4 className="font-display font-bold text-white text-[1.125rem] leading-snug mb-1">{title}</h4>
@@ -58,20 +72,20 @@ export default function CampusLife({ college }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 lg:[grid-template-rows:384px_288px]">
           <GalleryCard
             title={large.title} desc={large.desc}
-            img={large.img} fallbackImg={large.fallbackImg} link={large.link}
+            img={large.img} fallbackImg={large.fallbackImg} placeholderIcon={large.placeholderIcon} link={large.link}
             gridClass="h-[200px] sm:h-[240px] md:h-[280px] lg:h-auto sm:col-span-2 lg:col-span-2 row-span-1"
           />
           {rest.slice(0, 1).map(card => (
             <GalleryCard key={card.title}
               title={card.title} desc={card.desc}
-              img={card.img} fallbackImg={card.fallbackImg} link={card.link}
+              img={card.img} fallbackImg={card.fallbackImg} placeholderIcon={card.placeholderIcon} link={card.link}
               gridClass="h-[200px] sm:h-[240px] md:h-[280px] lg:h-auto col-span-1 row-span-1"
             />
           ))}
           {rest.slice(1).map(card => (
             <GalleryCard key={card.title}
               title={card.title} desc={card.desc}
-              img={card.img} fallbackImg={card.fallbackImg} link={card.link}
+              img={card.img} fallbackImg={card.fallbackImg} placeholderIcon={card.placeholderIcon} link={card.link}
               gridClass="h-[200px] sm:h-[240px] md:h-[280px] lg:h-auto col-span-1 row-span-1"
             />
           ))}
