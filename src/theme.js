@@ -196,6 +196,7 @@ const college = {
       title: "Women's Development",
       desc: "Celebrating women's achievements and empowerment on campus.",
       img: '/gallery/womens/womens-day/cover.jpg',
+      img2: '/gallery/womens/womens-day/cover-2.jpg',
       placeholderIcon: '🌸',
       link: '/events-gallery#womens',
     },

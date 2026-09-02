@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function GalleryCard({ title, desc, img, fallbackImg, placeholderIcon, link, gridClass }) {
+function GalleryCard({ title, desc, img, img2, fallbackImg, placeholderIcon, link, gridClass }) {
   const [src, setSrc] = useState(img);
   const [exhausted, setExhausted] = useState(false);
+  const [src2Failed, setSrc2Failed] = useState(false);
 
   const handleError = () => {
     if (fallbackImg && src !== fallbackImg) {
@@ -18,6 +19,25 @@ function GalleryCard({ title, desc, img, fallbackImg, placeholderIcon, link, gri
       {exhausted ? (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#5B1027]/12 to-[#5B1027]/4">
           <span className="text-5xl opacity-40 grayscale" aria-hidden="true">{placeholderIcon || '🖼️'}</span>
+        </div>
+      ) : img2 ? (
+        <div className="absolute inset-0 flex gap-0.5">
+          <img
+            src={src}
+            alt={title}
+            className="w-1/2 h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            onError={handleError}
+          />
+          {!src2Failed && (
+            <img
+              src={img2}
+              alt=""
+              className="w-1/2 h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              onError={() => setSrc2Failed(true)}
+            />
+          )}
         </div>
       ) : (
         <img
@@ -85,7 +105,7 @@ export default function CampusLife({ college }) {
           {rest.slice(1).map(card => (
             <GalleryCard key={card.title}
               title={card.title} desc={card.desc}
-              img={card.img} fallbackImg={card.fallbackImg} placeholderIcon={card.placeholderIcon} link={card.link}
+              img={card.img} img2={card.img2} fallbackImg={card.fallbackImg} placeholderIcon={card.placeholderIcon} link={card.link}
               gridClass="h-[200px] sm:h-[240px] md:h-[280px] lg:h-auto col-span-1 row-span-1"
             />
           ))}
