@@ -40,20 +40,20 @@ const categories = [
     label: 'Heads of Departments',
     members: [
       { sno: 9, name: 'Dr. P Srividya Devi', designation: 'HoD, Electrical and Electronics Engineering' },
-      { sno: 10, name: 'Dr. Anitha Lakshmi', designation: 'HoD, Mechanical Engineering' },
+      { sno: 10, name: 'Dr B Ch Nookaraju', designation: 'HoD, Mechanical Engineering' },
       { sno: 11, name: 'Dr. K Jamal', designation: 'HoD, Electronics and Communication Engineering' },
       { sno: 12, name: 'Dr. G. Karuna', designation: 'HoD, CSE (AI & ML)' },
       { sno: 13, name: 'Dr. B Sankara Babu', designation: 'HoD, Computer Science and Engineering' },
       { sno: 14, name: 'Dr. Y Jeevan Nagendra Kumar', designation: 'HoD, Information Technology' },
       { sno: 15, name: 'Dr. T Srinivas', designation: 'HoD, Civil Engineering' },
-      { sno: 16, name: 'Dr. M Sridhar', designation: 'HoD, Humanities and Sciences' },
+      { sno: 16, name: 'Dr G Patrick', designation: 'HoD, Humanities and Sciences' },
     ],
   },
   {
     label: 'Senior Faculty',
     members: [
       { sno: 17, name: 'Dr. Jandhyala N Murthy', designation: 'Director, GRIET' },
-      { sno: 18, name: 'Dr. Ch. Mallikarjuna Rao', designation: 'Controller of Examinations' },
+      { sno: 18, name: 'Dr M Kiran', designation: 'Controller of Examinations' },
       { sno: 19, name: 'Prof. P Gopala Krishna', designation: 'Dean – Assessment & Accreditation' },
       { sno: 20, name: 'Dr. C Lavanya', designation: 'Dean – IQAC' },
       { sno: 21, name: 'Dr. J Sridevi', designation: 'Dean – Finishing School' },
