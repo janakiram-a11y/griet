@@ -19,9 +19,9 @@ const hods = [
   { sno: 4, name: 'Dr. G. Karuna',                dept: 'CSE – Artificial Intelligence and Machine Learning',          shortDept: 'CSE-AIML', photo: 'https://www.griet.ac.in/images/karuna.jpg' },
   { sno: 5, name: 'Dr. S Govinda Rao',            dept: 'CSE – Data Science & Computer Science and Business Systems',  shortDept: 'CSE-DS/CSBS', photo: 'https://www.griet.ac.in/images/govindrao.jpg' },
   { sno: 6, name: 'Dr. P Srividya Devi',          dept: 'Electrical and Electronics Engineering',                      shortDept: 'EEE',      photo: null },
-  { sno: 7, name: 'Dr. Anitha Lakshmi',           dept: 'Mechanical Engineering',                                      shortDept: 'ME',       photo: 'https://www.griet.ac.in/2023/anitha.jpg' },
+  { sno: 7, name: 'Dr B Ch Nookaraju',            dept: 'Mechanical Engineering',                                      shortDept: 'ME',       photo: '/images/hods/b-ch-nookaraju.png' },
   { sno: 8, name: 'Dr. T Srinivas',               dept: 'Civil Engineering',                                           shortDept: 'CE',       photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0032.jpg' },
-  { sno: 9, name: 'Dr. M Sridhar',                dept: 'Humanities and Sciences',                                     shortDept: 'H&S',      photo: 'https://www.griet.ac.in/2023/sridhar.jpg' },
+  { sno: 9, name: 'Dr G Patrick',                 dept: 'Humanities and Sciences',                                     shortDept: 'H&S',      photo: '/images/hods/g-patrick.png' },
 ];
 
 export default function AdminHODsPage() {

@@ -13,7 +13,7 @@ function SectionHeading({ children }) {
 }
 
 const deans = [
-  { sno: 1,  name: 'Dr. Ch. Mallikarjuna Rao',   portfolio: 'Controller of Examinations',          photo: 'https://www.griet.ac.in/2022/iqac%20committee/cmr.jpg' },
+  { sno: 1,  name: 'Dr M Kiran',                 portfolio: 'Professor of ECE',                    photo: '/images/deans/m-kiran.jpg' },
   { sno: 2,  name: 'Dr. K Prasanna Lakshmi',      portfolio: 'Academic Affairs',                    photo: 'https://www.griet.ac.in/2022/iqac%20committee/prasanna%20lakshmi.jpg' },
   { sno: 3,  name: 'Dr. Swadish Kumar Singh',      portfolio: 'Research & Consultancy',              photo: 'https://www.griet.ac.in/2022/iqac%20committee/swadesh.jpg' },
   { sno: 4,  name: 'Prof. P Gopala Krishna',       portfolio: 'Assessment & Accreditation',          photo: 'https://www.griet.ac.in/images/gopal.jpeg' },
