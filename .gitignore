@@ -23,7 +23,38 @@ dist-ssr
 
 # Gallery media (13GB images/videos) — too large for GitHub.
 # Serve locally or via CDN. Re-run: node scripts/dedupeGallery.mjs after restoring media.
-public/gallery/
+# Exception: homepage "Campus Life" cover thumbnails are small and committed directly.
+public/gallery/*
+!public/gallery/cultural/
+public/gallery/cultural/*
+!public/gallery/cultural/valedictory/
+public/gallery/cultural/valedictory/*
+!public/gallery/cultural/valedictory/cover.jpg
+
+!public/gallery/technical/
+public/gallery/technical/*
+!public/gallery/technical/iic/
+public/gallery/technical/iic/*
+!public/gallery/technical/iic/cover.jpg
+
+!public/gallery/nss/
+public/gallery/nss/*
+!public/gallery/nss/events/
+public/gallery/nss/events/*
+!public/gallery/nss/events/cover.jpg
+
+!public/gallery/professional/
+public/gallery/professional/*
+!public/gallery/professional/pb-iks/
+public/gallery/professional/pb-iks/*
+!public/gallery/professional/pb-iks/cover.jpg
+
+!public/gallery/womens/
+public/gallery/womens/*
+!public/gallery/womens/womens-day/
+public/gallery/womens/womens-day/*
+!public/gallery/womens/womens-day/cover.jpg
+!public/gallery/womens/womens-day/cover-2.jpg
 
 # Editor directories and files
 .vscode/*
