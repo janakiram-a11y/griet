@@ -13,7 +13,7 @@ function SectionHeading({ children }) {
 }
 
 const deans = [
-  { sno: 1,  name: 'Dr M Kiran',                 portfolio: 'Professor of ECE',                    photo: '/images/deans/m-kiran.jpg' },
+  { sno: 1,  name: 'Dr M Kiran',                 portfolio: 'Controller of Examinations',          photo: '/images/deans/m-kiran.jpg' },
   { sno: 2,  name: 'Dr. K Prasanna Lakshmi',      portfolio: 'Academic Affairs',                    photo: 'https://www.griet.ac.in/2022/iqac%20committee/prasanna%20lakshmi.jpg' },
   { sno: 3,  name: 'Dr. Swadish Kumar Singh',      portfolio: 'Research & Consultancy',              photo: 'https://www.griet.ac.in/2022/iqac%20committee/swadesh.jpg' },
   { sno: 4,  name: 'Prof. P Gopala Krishna',       portfolio: 'Assessment & Accreditation',          photo: 'https://www.griet.ac.in/images/gopal.jpeg' },
@@ -29,10 +29,10 @@ const deans = [
   { sno: 14, name: 'Dr. T Padma',                  portfolio: 'Green Campus & Outreach',             photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0039.jpg' },
   { sno: 15, name: 'Dr. K Madhavi',                portfolio: 'ICT',                                 photo: 'https://www.griet.ac.in/images/madhavi.jpg' },
   { sno: 16, name: 'Dr. T Srinivas',               portfolio: 'PG Studies',                          photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0032.jpg' },
-  { sno: 17, name: 'Dr. GS Bapiraju',              portfolio: 'Internships',                         photo: 'https://www.griet.ac.in/2023/bapiraju.jpg' },
+  { sno: 17, name: 'Dr. Y. Krishnabhargavi',       portfolio: 'Internships',                         photo: '/images/deans/y-krishnabhargavi.jpg' },
   { sno: 18, name: 'Dr. C Lavanya',                portfolio: 'IQAC',                                photo: 'https://www.griet.ac.in/images/Lavanya.jpeg' },
   { sno: 19, name: 'Dr. T Jagannadha Swamy',       portfolio: 'Alumni Affairs',                      photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0038.jpg' },
-  { sno: 20, name: 'Dr. N Rajashekar',             portfolio: 'Higher Studies & Competitive Exams',  photo: 'https://www.griet.ac.in/2023/Deans%20Photos/rajasekhar.jpg' },
+  { sno: 20, name: 'Dr Ravikiran K',               portfolio: 'Higher Studies & Competitive Exams',  photo: '/images/deans/ravikiran-k.jpg' },
   { sno: 21, name: 'Dr. P Sri Vidya Devi',         portfolio: 'Skill Plus',                          photo: 'https://www.griet.ac.in/2023/Deans%20Photos/IMG-20231026-WA0031.jpg' },
 ];
 
